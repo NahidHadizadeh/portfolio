@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --text-color-1: #182945;
+  --text-color-2: #46a5e5;
+  --text-color-3: #a1c436;
+  --text-color-4: #fbf6ce;
+  --text-color-5: #e8e8f0;
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins ", sans-serif;
+}
+body,
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+h3 {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
+main {
+  width: 100%;
+}
+header {
+  width: 100%;
+  height: 70px;
+  /* display: none; */ /*---------------- display header--------------------*/
+}
+/* ========================= header ========================= */
+.header {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  padding-left: 2.5em;
+  padding-right: 1.5em;
+  padding-top: 0.4rem;
+  border-bottom: 2px solid #c1c1c1;
+  padding-left: auto;
+  padding-right: auto;
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--text-color-1);
+}
+.logo {
+  font-size: 1.5rem;
+  font-family: "Clicker script", cursive;
+  font-weight: 900;
+  color: var(--text-color-5);
+}
+.logo span {
+  font-size: 2.5rem;
+  color: var(--text-color-3);
+}
+.logo-div {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-top: 0.8rem;
+}
+.logo-div::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 2rem;
+  border-bottom: 7px solid var(--text-color-2);
+  border-right: 7px solid var(--text-color-2);
+  top: 1.7rem;
+  left: 4rem;
+  margin-top: 0.4rem;
+  cursor: pointer;
+}
+.logo-div::before {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 2em;
+  border-top: 7px solid var(--text-color-2);
+  border-left: 7px solid var(--text-color-2);
+  top: 0.5rem;
+  left: -1.6rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  padding-left: 0.2rem;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+}
+nav ul li {
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  font-family: "Poppins ", sans-serif;
+  font-weight: 600;
+  color: var(--text-color-5);
+}
+nav ul li a {
+  color: inherit;
+}
+nav ul li:hover {
+  cursor: pointer;
+  background-color: var(--text-color-3);
+  color: var(--text-color-5);
+}
+.header h2 {
+  font-family: "Poppins ", sans-serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-top: -0.5rem;
+  color: var(--text-color-5);
+}
+
+/* ========================= aside ========================= */
+
+.aside {
+  position: fixed;
+  width: 25%;
+  min-height: 100vh;
+  box-shadow: 2px 0px 4px #c1c1c1;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  display: none; /* ---------------------display aside-----------------------------*/
+  background-color: var(--text-color-1);
+}
+.aside .logo {
+  font-size: 1.5rem;
+  font-family: "Clicker script", cursive;
+  font-weight: 900;
+  color: var(--text-color-5);
+}
+.aside .logo span {
+  font-size: 2.5rem;
+  color: var(--text-color-3);
+}
+.aside .aside-logo-div {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.aside .aside-logo-div::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 2.4rem;
+  border-bottom: 7px solid var(--text-color-2);
+  border-right: 7px solid var(--text-color-2);
+  top: 1.05rem;
+  left: 4.8rem;
+  margin-top: 0.4rem;
+  cursor: pointer;
+}
+.aside .aside-logo-div::before {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 2.2em;
+  border-top: 7px solid var(--text-color-2);
+  border-left: 7px solid var(--text-color-2);
+  top: -0.5rem;
+  left: -1.8rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  margin-left: 0.2rem;
+}
+
+.aside nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+.aside nav ul li {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  font-family: "Poppins ", sans-serif;
+  font-weight: 600;
+  background-color: var(--text-color-5);
+  color: var(--text-color-2);
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+.aside nav ul li a {
+  color: inherit;
+  background-color: inherit;
+}
+.aside nav ul li a i {
+  margin-right: 0.7rem;
+}
+.aside nav ul li:hover {
+  cursor: pointer;
+  background-color: var(--text-color-3);
+  color: var(--text-color-5);
+}
+/* ========================= main ========================= */
+.container {
+  width: 100%;
+  display: flex;
+}
+/* ========================= content ========================= */
+
+.content {
+  width: 100%; /*-------------------------------width content------------------------*/
+  /* margin-left: 25%; */ /*-------------------------------margin-left--------------------------- */
+}
+.padding {
+  padding: 0 1rem;
+}
+.padding-15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.hidden {
+  display: none;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  position: relative;
+}
+.section {
+  background-color: aliceblue;
+  padding: 6rem 2rem;
+  opacity: 1;
+
+}
+.section-title {
+  flex: 0 0 100%;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.section-heading {
+  font-size: 2.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  font-weight: 900;
+  display: block;
+  position: relative;
+}
+.section-heading::after {
+  content: "";
+  width: 4rem;
+  height: 5px;
+  background-color: var(--text-color-2);
+  position: absolute;
+  top: 110%;
+  left: 0;
+}
+.section-heading::before {
+  content: "";
+  width: 3rem;
+  height: 5px;
+  background-color: var(--text-color-2);
+  position: absolute;
+  top: 110%;
+  left: 0;
+  margin-top: 0.5rem;
+}
+
+/* ================================================== media ============================================= */
+
+/* ================= @media header==================== */
+@media (max-width: 845px) {
+  header {
+    display: none;
+  }
+  .aside {
+    display: flex;
+  }
+  .content {
+    margin-left: 25%;
+    width: 75%;
+  }
+}
+/* ================= @media aside==================== */
+
+@media (max-width: 700px) {
+  .aside .aside-logo-div::after,
+  .aside .aside-logo-div::before {
+    display: none;
+  }
+  .aside .logo {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .aside nav ul li {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 475px) {
+  .aside nav ul li a i {
+    display: none;
+  }
+}

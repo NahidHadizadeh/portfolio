@@ -1,0 +1,106 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8rem;
+}
+.home .home-content {
+  flex: 0 0 60%;
+  max-width: 60%;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.home-img {
+  flex: 0 0 40%;
+  max-width: 40%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+}
+.home-img img {
+  width: 18rem;
+  height: 24rem;
+  border-radius: 8px;
+  position: absolute;
+}
+.home-img::before {
+  content: "";
+  width: 5rem;
+  height: 6rem;
+  border-left: 8px solid var(--text-color-2);
+  border-top: 7px solid var(--text-color-2);
+  position: absolute;
+  top: -2rem;
+  left: 0rem;
+}
+.home-img::after {
+  content: "";
+  width: 5rem;
+  height: 6rem;
+  border-right: 8px solid var(--text-color-2);
+  border-bottom: 8px solid var(--text-color-2);
+  position: absolute;
+  bottom: -2rem;
+  left: 17.2rem;
+}
+h3 {
+  font-size: 2rem;
+  line-height: 4.5rem;
+  color: rgb(19, 19, 19);
+}
+span {
+  font-family: "Clicker script", cursive;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text-color-2);
+}
+.home-content p {
+  color: #302e4d;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.my-profession {
+  font-size: 30px;
+  margin: 15px 0;
+}
+.typing {
+  color: var(--text-color-2);
+}
+p {
+  margin-bottom: 70px;
+  font-size: 20px;
+  color: var(--text-black-700);
+}
+/*  =========================================== media ==================================== */
+@media (max-width: 845px) {
+  .home .home-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .home-img {
+    display: none;
+  }
+}
+@media (max-width: 955px) {
+  .home-img::before {
+    content: "";
+    width: 5rem;
+    height: 6rem;
+    border-left: 8px solid var(--text-color-2);
+    border-top: 7px solid var(--text-color-2);
+    position: absolute;
+    top: -2rem;
+    left: 0rem;
+  }
+  .home-img::after {
+    content: "";
+    width: 5rem;
+    height: 6rem;
+    border-right: 8px solid var(--text-color-2);
+    border-bottom: 8px solid var(--text-color-2);
+    position: absolute;
+    bottom: -2rem;
+    left: 17.2rem;
+  }
+}
